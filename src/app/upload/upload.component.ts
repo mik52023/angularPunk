@@ -19,9 +19,10 @@ export class UploadComponent implements OnInit {
  
   onSubmit(f :NgForm)
    { 
+    
 
        this.video = new Video(0,f.value.video_name,f.value.url,f.value.concert_city,f.value.user
-           ,f.value.band_name,f.value.song_name, f.value.concert_name, f.value.concert_date,0);
+           ,f.value.band_name,f.value.song_name, f.value.concert_name, f.value.concert_date,0, '0');
 
   //     videoService.uploadVideo(this.video)
    //    .then(

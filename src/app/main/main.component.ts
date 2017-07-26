@@ -32,5 +32,6 @@ return this.sanitizer.bypassSecurityTrustResourceUrl(this.main_video.embedded.to
                this.main_video=video;
           }
     );
-  }
+}
+
 }

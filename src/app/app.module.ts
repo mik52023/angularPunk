@@ -28,6 +28,7 @@ import { ShowLastUploadsMainComponent } from './show-last-uploads/show-last-uplo
 import { ShowLastUploadsAsideComponent } from './show-last-uploads/show-last-uploads-aside/show-last-uploads-aside.component';
 import { UploadComponent } from './upload/upload.component';
 import { ShowAllFavouritesComponent } from './show-all-favourites/show-all-favourites.component';
+import { YTComponent } from './yt/yt.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ AsideAppComponent,
     ShowLastUploadsAsideComponent,
     UploadComponent,
     ShowAllFavouritesComponent,
+    YTComponent,
 
   ],
   imports: [

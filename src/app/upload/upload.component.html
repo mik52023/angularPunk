@@ -2,12 +2,13 @@
  <form  #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
    <label> Video name: </label><input name="video_name" ngModel required #first="ngModel">
 
-   <label class="upload_text"> Band name: </label><input  name="band_name" ngModel>
-   <label> Song name:</label> <input  name="song_name" ngModel>
-   <label> Consert name:</label><input  name="concert_name" ngModel> 
-   <label> Consert date:</label><input name="concert_date" ngModel>
-   <label> Concert city:</label><input  name="concert_city" ngModel>
-   <label> Url:</label><input  name="url" ngModel >
-   <div class="form_upload_button"> <a>Submit</a></div>
+   <label class="upload_text"> Band name: </label><input  name="band_name" ngModel required>
+   <label> Song name:</label> <input  name="song_name" ngModel required>
+   <label> Consert name:</label><input  name="concert_name" ngModel required> 
+   <label> Consert date:</label><input name="concert_date" ngModel required>
+   <label> Concert city:</label><input  name="concert_city" ngModel required>
+   <label> Url:</label><input  name="url" ngModel required>
+   <!--<div class="form_upload_button"> <a>Submit</a></div>-->
+   <button class="form_upload_button" [disabled]="!f.valid">Submit</button>
 </form>
  
