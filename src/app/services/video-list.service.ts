@@ -37,5 +37,9 @@ setSelectedVideo(video:Video){
 this.selected_video=video;
 this.item_selected.emit(this.selected_video);
  }
+uploadVideo(name,id,embedded,location,song,band,concert_name,concert_date,user){
 
+  const obj={name:name,id:id,embedded:embedded,location:location,song:song,band:band,concert_name:concert_name,concert_date:concert_date,user:user}
+  return this.http.post(`${this.url}add_Movie/`,obj);
+}
 }

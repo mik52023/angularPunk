@@ -4,6 +4,8 @@ import {NgForm} from '@angular/forms';
  import { NgModel } from '@angular/forms';
  import {WrapperComponent} from '../wrapper/wrapper.component';
 // import {VideoService} from '../services/video.service';
+import  {VideoListService} from '../services/video-list.service';
+import {Http,Response} from '@angular/http';
 
 @Component({
   selector: 'app-upload',
@@ -12,23 +14,30 @@ import {NgForm} from '@angular/forms';
 })
 export class UploadComponent implements OnInit {
  video:Video;
-  constructor() { }
+ show_alert:boolean=false;
+ alert_type:string;
+  constructor(private videolistservice:VideoListService) { }
 
   ngOnInit() {
   }
  
-  onSubmit(f :NgForm)
+  onSubmit(form :NgForm)
    { 
     
-
-       this.video = new Video(0,f.value.video_name,f.value.url,f.value.concert_city,f.value.user
-           ,f.value.band_name,f.value.song_name, f.value.concert_name, f.value.concert_date,0, '0');
-
-  //     videoService.uploadVideo(this.video)
-   //    .then(
-
-/**/
-     //    );
+  const val=form.value;
+console.log("sending data...");
+console.log(val.name);
+    this.videolistservice.uploadVideo(val.name,4,val.embedded,val.location,val.song,val.band,val.concert_name,val.concert_date,"avi")
+   .subscribe(
+     (res:Response)=>{
+       this.show_alert=true; 
+       if(res.json()=="success"){
+                              this.alert_type="upload successful";     
+                                   }
+      else{
+        this.alert_type="upload failed";
+      }                             
+});
 
     }
    

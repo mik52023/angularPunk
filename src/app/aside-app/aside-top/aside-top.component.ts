@@ -31,6 +31,9 @@ videoURL(url:String){
     return this.sanitizer.bypassSecurityTrustResourceUrl(url.toString());
    
 }
+onSelected(){
+    this.videolistservice.setSelectedVideo(this.top_video);
+}
 
 onPressed(){
     this.pressed=!this.pressed;
