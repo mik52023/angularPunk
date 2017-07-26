@@ -24,8 +24,8 @@
         </div>
        
         <div fxLayout="row" class="search">
-            <a href=""></a>
-            <input type="text" class="input" />
+            <a routerLinkActive="active" routerLink="/search" (click)="onPressed()"></a>
+            <input type="text" class="input" [(ngModel)]="search_input"/>
        </div>
        
 

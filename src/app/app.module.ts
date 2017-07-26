@@ -32,6 +32,7 @@ import { ShowAllLocationComponent } from './show-all-location/show-all-location.
 import { Component, OnInit } from '@angular/core';
 import { BottomListComponent } from './bottom-list/bottom-list.component';
 import { BottomItemComponent } from './bottom-list/bottom-item/bottom-item.component';
+import { SearchPageComponent } from './search-page/search-page.component';
 
 
 @NgModule({
@@ -56,7 +57,8 @@ AsideAppComponent,
     UploadComponent,
     ShowAllLocationComponent,
     BottomListComponent,
-    BottomItemComponent
+    BottomItemComponent,
+    SearchPageComponent
 
   ],
   imports: [
