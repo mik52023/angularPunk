@@ -20,7 +20,7 @@ top_video:Video = new Video(0,"Pitbull2",'https://www.youtube.com/embed/UWLr2va3
 
   ngOnInit() {
        this.pressed=false;
-this.videolistservice.getVideosByUser("danny").subscribe( 
+this.videolistservice.getVideosByUser("avi").subscribe( 
          (res:Response)=>{
         this.top_video=res.json()[0];
 });
