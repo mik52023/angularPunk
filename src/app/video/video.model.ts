@@ -10,8 +10,9 @@ public  song:String="";
 public  concert_name:String="";
 public  concert_date:String="";    
 public number_of_views:Number=0;
+public upload_date:String="";
 
-constructor(id:Number,name:String,embedded:String,location:String,user:String,band:String,song:String,concert_name:String,concert_date:String,number_of_views:Number){
+constructor(id:Number,name:String,embedded:String,location:String,user:String,band:String,song:String,concert_name:String,concert_date:String,number_of_views:Number,upload_date:String){
 
 this.id=id;
 this.name=name;
@@ -23,6 +24,6 @@ this.song=song;
 this.concert_name=concert_name;
 this.concert_date=concert_date;
 this.number_of_views=number_of_views;
-
+this.upload_date=upload_date;
 }
 }

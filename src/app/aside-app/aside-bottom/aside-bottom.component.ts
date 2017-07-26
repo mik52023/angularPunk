@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Video} from '../../video/video.model';
 import  {VideoListService} from '../../services/video-list.service';
+import {Http,Response} from '@angular/http';
 
 @Component({
   selector: 'app-aside-bottom',
@@ -19,6 +20,10 @@ video_list:Video[]=[];
   }
 
   ngOnInit() {
-this.video_list=this.videolistservice.getVideosByLocation("Tel-Aviv");
+this.videolistservice.getVideosByLocation("Tel-Aviv").subscribe(
+(res:Response)=>{
+this.video_list=res.json();
+     }
+    );
   }
 }
