@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component ,AfterViewInit} from '@angular/core';
 
 
 @Component({
@@ -8,4 +8,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app works!';
+
+
+ngAfterViewInit() {
+           var tag = document.createElement('script');
+ 
+           tag.src = "https://www.youtube.com/iframe_api";
+           var firstScriptTag = document.getElementsByTagName('script')[0];
+           firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+     }
+
 }

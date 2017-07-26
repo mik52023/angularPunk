@@ -2,10 +2,14 @@
         <div class="name_main_video">{{main_video.name}}</div>
         <div class="number_of_views thin_text"><span>{{main_video.number_of_views}}</span> views</div>
 
+
         <iframe id="video" class="main_video" allowfullscreen
           [src]="videoURL()" >
         </iframe>
+    
         <div class="live"></div>
+       
+<!--
         <div class="video_buttons_background">
             <div class="play all_buttons_player" id="play-button"></div>
             <div class="next all_buttons_player"></div>
@@ -13,6 +17,7 @@
             <div class="volume_line"></div>
 
         </div>
+        -->
         <div class="thin_text date">{{main_video.concert_date}}</div>
         <div class="share_on">share on:</div>
         <div class="logos_collection">

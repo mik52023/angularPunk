@@ -27,8 +27,12 @@ import { ShowLastUploadsComponent } from './show-last-uploads/show-last-uploads.
 import { ShowLastUploadsMainComponent } from './show-last-uploads/show-last-uploads-main/show-last-uploads-main.component';
 import { ShowLastUploadsAsideComponent } from './show-last-uploads/show-last-uploads-aside/show-last-uploads-aside.component';
 import { UploadComponent } from './upload/upload.component';
-import { YTComponent } from './yt/yt.component';
 import { ShowAllLocationComponent } from './show-all-location/show-all-location.component';
+
+import { Component, OnInit } from '@angular/core';
+import { BottomListComponent } from './bottom-list/bottom-list.component';
+import { BottomItemComponent } from './bottom-list/bottom-item/bottom-item.component';
+
 
 @NgModule({
   declarations: [
@@ -50,8 +54,9 @@ AsideAppComponent,
     ShowLastUploadsMainComponent,
     ShowLastUploadsAsideComponent,
     UploadComponent,
-    YTComponent,
     ShowAllLocationComponent,
+    BottomListComponent,
+    BottomItemComponent
 
   ],
   imports: [
@@ -59,7 +64,9 @@ AsideAppComponent,
     FormsModule,
     HttpModule,
     RouterModule,
-    AppRoutingModule
+    AppRoutingModule,
+    
+
   ],
   providers: [VideoListService],
   bootstrap: [AppComponent]

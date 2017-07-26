@@ -1,4 +1,4 @@
- .side-video-with-description{
+.side-video-with-description{
     position:relative;
     margin-bottom: 100px;
  }
@@ -9,9 +9,7 @@
     height: 100px;
     width: initial;
     float: right;
-   
-        display: inline-block;
-    margin-top: -156px;
+    display: inline;
  }
 .aside_bottom_video_details ul{
     list-style-type: none;
@@ -37,9 +35,9 @@
     display: inline;
  }
   .aside_bottom_video_name{
-      /* position: absolute; */
-    width: 337px;
-    height: initial;
+    position:absolute;
+    width: initial;
+    height: 36px;
     background-color: black;
     font-family: LetterGothicStd;
     font-size: 27px;
@@ -47,8 +45,8 @@
     padding-top: 4px;
     padding-left: 12px;
     padding-right: 4px;
+
     z-index: 9999;
-    /* right: 196px; */
-    /* top: 193px; */
-    margin-left: 185px;
-}
+    right: 196px;
+    top: 193px;
+ }

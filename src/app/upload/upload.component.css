@@ -1,13 +1,14 @@
+
 form{
     height: initial;
-     display: block;
+  /*   display: block;
     margin-left: 537px;
-    margin-top: 75px;
-    width: 300px;
+    margin-top: 75px;*/
+   
 }
 input{
-     width: 600px;
-     height: 35px;
+    width: 500px;
+     height: initial;
      color:white;
      background-color: black;
      font-family: LetterGothicStd-Slanted;
@@ -22,8 +23,8 @@ input{
     src: url(../../fonts/LetterGothicStd-Slanted.otf);
 }
 label{
- margin-top: 10px;
-    width: 250px;
+/*margin-top: 10px;*/
+    width: initial;
  font-size: 30px;
     font-family: LetterGothicStd-BoldSlanted;
    color:#682954;
@@ -42,5 +43,5 @@ text-decoration: none;
     width: 121px;
     position: relative;
     text-align: center;
-   margin-left: 230px;
-}
+  /* margin-left: 230px;*/
+    }

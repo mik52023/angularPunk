@@ -1,9 +1,15 @@
+
+<div class="container">
+
 <ul>
+    <div class="row">
+        <div class="col-xs-5 col-xs-offset-1 col-sm-12 col-sm-offset-1 col-md-10 col-md-offset-0 ">
+            <app-video-item
+                *ngFor="let videoEl of videos"
+                [video]="videoEl">
+            </app-video-item> 
+        </div>
+    </div>
 
-<app-video-item
-*ngFor="let videoEl of videos"
-[video]="videoEl">
-  
-</app-video-item> 
-
- <ul>
+ </ul>
+</div>

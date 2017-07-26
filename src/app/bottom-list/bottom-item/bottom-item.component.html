@@ -1,7 +1,4 @@
 <li>
-<div class="aside_bottom_video_name">{{video.song}}</div>
- <iframe [src]="videoURL()"
-                              class="aside_bottom_video"></iframe>
 <div class="side-video-with-description" (click)="onSelected()">
                         <div class="aside_bottom_video_details thin_text">
                             <ul>
@@ -10,8 +7,9 @@
                                 <li>{{video.number_of_views}} views</li>
                             </ul>
                         </div>
-                       
+                        <iframe [src]="videoURL()"
+                              class="aside_bottom_video"></iframe>
                 
-                    
-</div>
+                    <div class="aside_bottom_video_name">{{video.song}}</div>
+                        </div>
  </li>                   

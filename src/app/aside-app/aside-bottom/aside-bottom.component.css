@@ -87,6 +87,7 @@ width: 400px;
 .aside_bottom_video_details ul{
     list-style-type: none;
     direction: ltr;
+    width: 194px;
  }
 .aside_bottom_video_details li:nth-child(2){
     color:black;
