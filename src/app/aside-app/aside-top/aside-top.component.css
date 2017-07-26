@@ -1,0 +1,137 @@
+
+.rout_button a{
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+.rout_ul{
+    list-style-type: none;
+}
+iframe{
+    background-color: black;
+    display: inline-block;
+}
+.secondary_video{
+    position: absolute;
+    top: 74px;
+    right: 3px;
+    height: 195px;
+    width: 345px;
+    border: none;
+ }
+ .next_on{
+    position: absolute;
+    top: 43px;
+    right: 1px;
+ }
+ a{
+    margin-right: 113px;
+    font: inherit;
+    background: none;
+
+}
+a.rout_button{
+        right: -72px;
+    width: initial;
+}
+ .rout_button {
+    height: 37px;
+    width: 237px;
+    position: absolute;
+      top: 43px;
+    right: 30px;
+background-color: none;
+    border: none;
+    
+    display: inline-block;
+    
+}
+ .secondary_video_details{
+     position: absolute;
+    top: 74px;
+    right: 364px;
+    height: 100px;
+    width: initial;
+    padding-right: 25px;
+ }
+ .upper_video{
+height: 400px;
+width: 400px;
+ }
+ .secondary_video_details ul{
+    padding-right: 1px;
+    list-style-type: none;
+    direction: rtl;
+ }
+ .secondary_video_details li:nth-child(2){
+    color:black;
+ }
+ .secondary_video_name{
+    position:absolute;
+    top:269px;
+    right: 187px;
+    width: initial;
+    height: 36px;
+    background-color: black;
+    font-family: LetterGothicStd;
+    font-size: 27px;
+    color: white;
+    padding-top: 4px;
+    padding-left: 12px;
+    padding-right: 4px;
+ }
+ .thin_text{
+    font-size: 27px;
+    font-family: LetterGothicStd;
+   color:#682954;
+
+ }
+
+ .side-video-with-description{
+      position: relative;
+    padding-bottom: 83px;
+    padding-left: 129px;
+    padding-top: 77px;
+    padding-left: 350px;
+
+ }
+ .aside_top_video{
+  display: inline-block;
+    height: 195px;
+    width: 345px;
+    border: none;
+    position: relative;
+   
+ }
+  .aside_top_video_name{
+    position:absolute;
+    width: initial;
+    height: 36px;
+    background-color: black;
+    font-family: LetterGothicStd;
+    font-size: 27px;
+    color: white;
+    padding-top: 4px;
+    padding-left: 12px;
+    padding-right: 4px;
+
+    z-index: 3;
+      right: 226px;
+    top: 272px;
+ }
+ .top_asside{
+     list-style-type: none;
+     direction: ltr;
+     width: initial;
+     display: inline-block;
+ }
+
+
+.thin_text{
+    font-size: 27px;
+    font-family: LetterGothicStd;
+   color:#682954;
+
+ }

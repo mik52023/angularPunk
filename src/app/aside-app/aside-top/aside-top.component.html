@@ -1,0 +1,16 @@
+<div class="side-video-with-description">
+<a class="rout_button thin_text" 
+       routerLinkActive="active" routerLink="/aside-top-list"><b>show all uploads</b></a>
+
+                        <div class="secondary_video_details thin_text">
+                            <ul top_asside>
+                                <li>{{top_video.name}}</li>
+                                <li>{{top_video.concert_date}}</li>
+                                <li>{{top_video.number_of_views}}</li>
+                            </ul>
+                        </div>
+                            <iframe class="aside_top_video  upper_video" [src]="videoURL(top_video.embedded)"
+                              ></iframe>
+                        
+</div>
+ <div class="aside_top_video_name">song- nice</div>

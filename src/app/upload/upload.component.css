@@ -1,0 +1,46 @@
+form{
+    height: initial;
+     display: block;
+    margin-left: 537px;
+    margin-top: 75px;
+    width: 300px;
+}
+input{
+     width: 600px;
+     height: 35px;
+     color:white;
+     background-color: black;
+     font-family: LetterGothicStd-Slanted;
+     font-size: 20px;
+}
+@font-face {
+    font-family: LetterGothicStd-BoldSlanted;
+    src: url(../../fonts/LetterGothicStd-BoldSlanted.otf);
+}
+@font-face {
+    font-family: LetterGothicStd-Slanted;
+    src: url(../../fonts/LetterGothicStd-Slanted.otf);
+}
+label{
+ margin-top: 10px;
+    width: 250px;
+ font-size: 30px;
+    font-family: LetterGothicStd-BoldSlanted;
+   color:#682954;
+}
+a{
+  
+    font-size: 30px;
+     font-family: LetterGothicStd-Slanted;
+      color:red;
+text-decoration: none;
+}
+.form_upload_button{
+    background-color: black;
+   margin-top: 20px;
+ height: 37px;
+    width: 121px;
+    position: relative;
+    text-align: center;
+   margin-left: 230px;
+}
