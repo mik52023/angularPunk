@@ -22,7 +22,11 @@ video_list:Video[]=[];
   ngOnInit() {
 this.videolistservice.getVideosByLocation("Tel-Aviv").subscribe(
 (res:Response)=>{
-this.video_list=res.json();
+    let data=res.json();
+for(let i=0;i<3&&data[i]!=null;i++){
+ this.video_list[i]=data[i];
+          
+     }
      }
     );
   }
