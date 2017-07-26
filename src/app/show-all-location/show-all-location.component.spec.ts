@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ShowAllFavouritesComponent } from './show-all-favourites.component';
+import { ShowAllLocationComponent } from './show-all-location.component';
 
-describe('ShowAllFavouritesComponent', () => {
-  let component: ShowAllFavouritesComponent;
-  let fixture: ComponentFixture<ShowAllFavouritesComponent>;
+describe('ShowAllLocationComponent', () => {
+  let component: ShowAllLocationComponent;
+  let fixture: ComponentFixture<ShowAllLocationComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ShowAllFavouritesComponent ]
+      declarations: [ ShowAllLocationComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ShowAllFavouritesComponent);
+    fixture = TestBed.createComponent(ShowAllLocationComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

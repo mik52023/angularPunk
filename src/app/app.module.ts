@@ -27,8 +27,8 @@ import { ShowLastUploadsComponent } from './show-last-uploads/show-last-uploads.
 import { ShowLastUploadsMainComponent } from './show-last-uploads/show-last-uploads-main/show-last-uploads-main.component';
 import { ShowLastUploadsAsideComponent } from './show-last-uploads/show-last-uploads-aside/show-last-uploads-aside.component';
 import { UploadComponent } from './upload/upload.component';
-import { ShowAllFavouritesComponent } from './show-all-favourites/show-all-favourites.component';
 import { YTComponent } from './yt/yt.component';
+import { ShowAllLocationComponent } from './show-all-location/show-all-location.component';
 
 @NgModule({
   declarations: [
@@ -50,8 +50,8 @@ AsideAppComponent,
     ShowLastUploadsMainComponent,
     ShowLastUploadsAsideComponent,
     UploadComponent,
-    ShowAllFavouritesComponent,
     YTComponent,
+    ShowAllLocationComponent,
 
   ],
   imports: [
