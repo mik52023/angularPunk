@@ -22,7 +22,7 @@ return this.sanitizer.bypassSecurityTrustResourceUrl(this.main_video.embedded.to
 }
 
   ngOnInit() {
-    this.videolistservice.getVideosByLocation("Tel-Aviv").subscribe(
+    this.videolistservice.getVideosByBand("Korn").subscribe(
         (res:Response)=>{
         this.main_video=res.json()[0];
 });
