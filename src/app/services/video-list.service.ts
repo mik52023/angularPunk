@@ -16,6 +16,12 @@ item_selected=new EventEmitter<Video>();
 private url:string="https://movies-ws-project.herokuapp.com/";
 
     constructor(private http: Http){
+
+      this.getVideosByBand("Korn").subscribe(
+         (res)=>{
+           this.setSelectedVideo(res.json()[0]);
+         }
+        );
   
     }
 

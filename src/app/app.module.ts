@@ -33,6 +33,7 @@ import { Component, OnInit } from '@angular/core';
 import { BottomListComponent } from './bottom-list/bottom-list.component';
 import { BottomItemComponent } from './bottom-list/bottom-item/bottom-item.component';
 import { SearchPageComponent } from './search-page/search-page.component';
+import{ YTComponent} from './yt/yt.component';
 
 
 @NgModule({
@@ -58,7 +59,8 @@ AsideAppComponent,
     ShowAllLocationComponent,
     BottomListComponent,
     BottomItemComponent,
-    SearchPageComponent
+    SearchPageComponent,
+    YTComponent
 
   ],
   imports: [

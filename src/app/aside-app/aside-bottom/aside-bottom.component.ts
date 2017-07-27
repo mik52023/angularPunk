@@ -14,9 +14,6 @@ video_list:Video[]=[];
 
 
   constructor(private videolistservice:VideoListService) { 
-
-
-
   }
 
   ngOnInit() {
@@ -25,6 +22,7 @@ this.videolistservice.getVideosByLocation("Tel-Aviv").subscribe(
     let data=res.json();
 for(let i=0;i<3&&data[i]!=null;i++){
  this.video_list[i]=data[i];
+
           
      }
      }

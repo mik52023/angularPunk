@@ -39,23 +39,11 @@ return this.sanitizer.bypassSecurityTrustResourceUrl(this.main_video.embedded.to
 }
 
   ngOnInit() {
-    this.videolistservice.getVideosByBand("Korn").subscribe(
-        (res:Response)=>{
-
-          var video=res.json()[0];
-          video.embedded=video.embedded.toString().replace("controls=0","controls=1");
-          video.embedded=video.embedded.toString().replace("rel=0","rel=1");
-          video.embedded=video.embedded.toString().replace("showinfo=0","showinfo=1");
-
-        console.log('video',video);
-        this.main_video= video;
-});
-   
- this.videolistservice.item_selected.subscribe(
-   (video:Video) => {
-               this.main_video=video;
-          }
-    );
+   this.videolistservice.item_selected.subscribe(
+     (video)=>{
+       this.main_video=video;
+     }
+     );
 }
 
 }

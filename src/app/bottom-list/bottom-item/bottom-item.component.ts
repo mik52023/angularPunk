@@ -15,6 +15,7 @@ export class BottomItemComponent implements OnInit {
 @Input() video:Video;
 
 onSelected(){
+    console.log(this.video.name);
     this.videolistservice.setSelectedVideo(this.video);
 }
 

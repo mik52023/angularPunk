@@ -7,6 +7,8 @@ import{AsideTopListComponent} from './aside-top-list/aside-top-list.component';
 import {ShowAllLocationComponent} from './show-all-location/show-all-location.component';
 import {VideoListComponent} from './aside-app/video-list/video-list.component';
 import {SearchPageComponent} from './search-page/search-page.component';
+import {BottomListComponent} from './bottom-list/bottom-list.component';
+
 
 
 const appRoutes: Routes=[
@@ -17,7 +19,8 @@ const appRoutes: Routes=[
 {path:'upload', component: UploadComponent },
 {path:'show-all-location', component: ShowAllLocationComponent },
 {path:'video-list', component:VideoListComponent},
-{path:'search',component:SearchPageComponent}
+{path:'search',component:SearchPageComponent},
+{path:'bottom-list',component:BottomListComponent}
 
 
 
